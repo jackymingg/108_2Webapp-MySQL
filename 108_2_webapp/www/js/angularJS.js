@@ -75,7 +75,7 @@ function login() {
     // 向資料庫傳送並取得資料
     datatype: "JSON",
     type: "POST",
-    url: "http://210.70.80.21/~s107021034/1082_sreve/1082_Login.php",
+    url: "http://210.70.80.21/~s107021034/1082_server/1082_Login.php",
     data:
       "userName=" +
       id +
@@ -116,7 +116,7 @@ function adduser() {
     // 向資料庫傳送並儲存資料
     datatype: "JSON",
     type: "POST",
-    url: "http://210.70.80.21/~s107021034/1082_sreve/1082_Register.php",
+    url: "http://210.70.80.21/~s107021034/1082_server/1082_Register.php",
     data:
       "userName=" +
       Name +
@@ -154,7 +154,7 @@ function del() {
   $.ajax({
     datatype: "JSON",
     type: "POST",
-    url: "http://210.70.80.21/~s107021034/1082_sreve/AddNotes_1.php",
+    url: "http://210.70.80.21/~s107021034/1082_server/AddNotes_1.php",
     data:
       "userEmail=" +
       id +
@@ -187,7 +187,7 @@ function noteOnLoad() {
   $.ajax({
     datatype: "JSON",
     type: "POST",
-    url: "http://210.70.80.21/~s107021034/1082_sreve/Getnotes_1.php",
+    url: "http://210.70.80.21/~s107021034/1082_server/Getnotes_1.php",
     data: "userEmail=" + id,
     crossDomain: true,
     cache: false,
@@ -227,7 +227,7 @@ function sendNote2DB() {
   $.ajax({
     datatype: "JSON",
     type: "POST",
-    url: "http://210.70.80.21/~s107021034/1082_sreve/AddNotes_1.php",
+    url: "http://210.70.80.21/~s107021034/1082_server/AddNotes_1.php",
     data:
       "userEmail=" +
       id +
