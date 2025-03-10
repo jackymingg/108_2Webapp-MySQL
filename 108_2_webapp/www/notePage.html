@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>MY NOTE</title>
+<meta name="format-detection" content="telephone=no" />
+<meta name="misapplication-tap-highlight" content="no" />
+<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angularJS.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body onload="noteOnLoad()">
+    <div data-role="header" style="overflow:hidden;background-color: rgb(255, 220, 23); font-size: 1.5em;">
+        <h1>I'm a Note</h1>
+        <div class="ui-grid-b ui-responsive">
+            <div class="ui-block-a">
+                <a data-icon="home"
+                    class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-inline ui-btn-left"
+                    onclick="javascript:location.href='MainPage.html'">Home</a>
+            </div>
+        </div>
+  <div class="btn-group" style="text-align:right;">
+      <button type="button" class="btn btn-primary">點我</button>
+      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+          <span class="caret"></span>
+      </button>
+      <div class="dropdown-menu">
+          <a class="dropdown-item" href="addNewNote.html">新增</a>
+          <a class="dropdown-item" onclick="del();">刪除</a>
+      </div>
+  </div>
+  </div>
+    </div>
+    <div id="mainContent" style=" background-color: rgb(142, 238, 86); font-size: 2.5em;">
+        <div id="div3" style="color:rgb(211, 42, 70) ; background-color:rgb(142, 238, 86)">
+
+        </div>
+    </div>
+    <script>
+        app.initialize();
+    </script>
+</body>
+
+</html>

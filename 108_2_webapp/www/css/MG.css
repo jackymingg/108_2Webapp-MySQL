@@ -1,0 +1,26 @@
+.img_div {
+    margin: 0 auto 0 auto;
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.mask {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    background: rgba(82, 43, 43, 0.4);
+    color: rgb(18, 245, 196);
+    opacity: 0;
+}
+
+.mask h4 {
+    text-align: center;
+}
+
+/* 改變透明度，使遮罩層顯示。 */
+.img_div a:hover .mask {
+    opacity: 1;
+}

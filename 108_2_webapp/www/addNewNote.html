@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>刀劍神域</title>
+<!-- Sets initial viewport load and disables zooming  -->
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+<!-- <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/angularJS.js"></script>
+</head>
+
+<body style="background-color: rgb(87, 194, 83);">
+    <div data-role="header" style="overflow:hidden;">
+        <h1>I'm a header</h1>
+        <a data-icon="home" class="ui-btn-left" onclick="javascript:location.href='MainPage.html'">Home</a>
+    </div>
+    <div id="mainContent" style="width:100%; margin: 0 auto;background-color: rgb(87, 194, 83);">
+        <div class="row ui-field-contain" style="text-align: left;font-size:large;">
+            <label for="noteType" class="col-3" style="text-align:left;font-size:1.5em;">類別:</label>
+            <select id="noteType" class="col-3" style="font-size:1.5em;">
+                <option value="work">公事</option>
+                <option value="family">家事</option>
+                <option value="friend">朋友</option>
+                <option value="other">其他</option>
+            </select>
+        </div>
+        <div class="ui-field-contain" style="text-align: left;font-size:1.5em;background-color: rgb(87, 194, 83);">
+            <label for="title" style="text-align:left;font-size:1.5em;">標題:</label>
+            <input type=" text" id="title" placeholder="Text input" style="font-size:large;">
+        </div>
+        <div class=" ui-field-contain" style="text-align:left;font-size:1.5em;background-color: rgb(87, 194, 83);">
+            <label for="description" style="text-align:left;font-size:1.5em;">內容:</label>
+            <textarea cols=" 30" rows="8" id="description" style="font-size:large;"></textarea>
+        </div>
+        <button class="ui-btn ui-shadow btn-info" onclick="sendNote2DB()">submit</button>
+        <input type="reset" class="ui-btn ui-shadow btn-info" value="Rewrite" style="font-size: large;">
+    </div>
+    <script>
+        app.initialize();
+    </script>
+</body>
+
+</html>
